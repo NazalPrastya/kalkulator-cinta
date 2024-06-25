@@ -19,7 +19,7 @@ export default function KalkulatorCintaPage() {
       setPoint(randomNumber);
       await addDoc(value, {
         cowo: formik.values.cowo,
-        cewe: formik.values.cowo,
+        cewe: formik.values.cewe,
         hasil: randomNumber,
       });
       setLoading(false);
@@ -128,7 +128,10 @@ export default function KalkulatorCintaPage() {
                   Kalian Punyaa {point}% Cinta
                 </p>
                 <div className="flex flex-col justify-center mt-5">
-                  <Link className="text-center italic underline text-blue-800">
+                  <Link
+                    to="/check-khodam"
+                    className="text-center italic underline text-blue-800"
+                  >
                     Coba Check Khodam
                   </Link>
                 </div>
@@ -141,7 +144,11 @@ export default function KalkulatorCintaPage() {
       <footer className="absolute left-0 right-0 bottom-4">
         <p className="text-center italic">
           created by{" "}
-          <a href="" className="underline">
+          <a
+            href="https://www.instagram.com/nazalprastya/?hl=id"
+            target="_blank"
+            className="underline"
+          >
             nazal
           </a>
         </p>

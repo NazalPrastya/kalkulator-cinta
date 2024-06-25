@@ -46,7 +46,11 @@ export default function LandingPage() {
       <footer className="absolute left-0 right-0 bottom-4">
         <p className="text-center italic">
           created by{" "}
-          <a href="" className="underline">
+          <a
+            href="https://www.instagram.com/nazalprastya/?hl=id"
+            target="_blank"
+            className="underline"
+          >
             nazal
           </a>
         </p>
