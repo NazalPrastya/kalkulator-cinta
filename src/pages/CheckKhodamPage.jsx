@@ -98,6 +98,7 @@ export default function CheckKhodamPage() {
             <p className="text-white mb-1">Nama:</p>
             <Input
               // label="Nama"
+              autoFocus
               color="green"
               value={nama}
               onChange={(e) => setNama(e.target.value)}
