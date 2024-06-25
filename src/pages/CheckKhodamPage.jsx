@@ -89,15 +89,18 @@ export default function CheckKhodamPage() {
     <div className="min-h-screen w-full flex justify-center items-center bg-black relative overflow-hidden">
       <div className="w-[320px] h-[100px] md:w-[590px] md:h-[400px] bg-purple-800 rounded-full absolute  top-[50%] left-[50%] translate-x-[70%] translate-y-[-50%] blur-[200px] z-[1]"></div>
       <div className="w-[320px] h-[100px] md:w-[590px] md:h-[400px] bg-cyan-600 rounded-full absolute  top-[50%] left-[-10%] translate-x-[0%] translate-y-[-50%] blur-[200px] z-[1]"></div>
-      <div className="container max-w-md">
+      <div className="container max-w-md relative z-10">
         <div className="bg-gradient-to-br from-blue-700 to-purple-600 p-5 rounded-lg shadow-xl bg-opacity-40">
           <h1 className="text-5xl font-bold bg-gradient-to-r text-white inline-block text-transparent bg-clip-text">
             Check Khodam
           </h1>
           <div className="w-full mt-10">
-            <p className="text-white mb-1">Nama:</p>
+            <label for="name" className="text-white mb-3">
+              Nama:
+            </label>
             <Input
               // label="Nama"
+              id="name"
               autoFocus
               color="green"
               value={nama}
