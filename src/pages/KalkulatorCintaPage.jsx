@@ -57,7 +57,7 @@ export default function KalkulatorCintaPage() {
             className="max-w-xl mx-auto mt-5 "
             onSubmit={formik.handleSubmit}
           >
-            <div className="max-w-xl w-96">
+            <div className="max-w-xl w-72 md:w-96">
               <Input
                 label="Cowo"
                 size="lg"
@@ -77,7 +77,7 @@ export default function KalkulatorCintaPage() {
               )}
             </div>
 
-            <div className="max-w-xl w-96 mt-5">
+            <div className="max-w-xl w-72 md:w-96 mt-5">
               <Input
                 label="Cewe"
                 size="lg"
