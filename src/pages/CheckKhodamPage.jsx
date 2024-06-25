@@ -105,7 +105,7 @@ export default function CheckKhodamPage() {
               color="green"
               value={nama}
               onChange={(e) => setNama(e.target.value)}
-              className="border-white focus:border-white placeholder:text-white "
+              className="border-white focus:border-white placeholder:text-white text-white"
             />
             <Button className="w-full mt-5" onClick={handleSubmit}>
               Submit
