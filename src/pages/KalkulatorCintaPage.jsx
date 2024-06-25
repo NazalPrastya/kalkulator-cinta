@@ -64,7 +64,7 @@ export default function KalkulatorCintaPage() {
                 name="cowo"
                 onChange={formik.handleChange}
                 error={formik.touched.cowo && formik.errors.cowo}
-                className="focus:border-white focus:text-white "
+                className="focus:border-white focus:text-white text-white"
               />
               {formik.touched.cowo && formik.errors.cowo && (
                 <Typography
@@ -84,7 +84,7 @@ export default function KalkulatorCintaPage() {
                 name="cewe"
                 onChange={formik.handleChange}
                 error={formik.touched.cewe && formik.errors.cewe}
-                className="focus:border-white focus:text-white "
+                className="focus:border-white focus:text-white text-white"
               />
             </div>
 
