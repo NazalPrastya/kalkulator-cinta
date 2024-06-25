@@ -23,8 +23,6 @@ const ListKhodam = [
   "Tidak Ada",
   "Tidak Ada",
   "Tidak Ada",
-  "Tidak Ada",
-  "Tidak Ada",
   "Ayam Geprek",
   "Ayam Warna Warni",
   "Gajah Duduk",
@@ -46,7 +44,16 @@ const ListKhodam = [
   "Kaos Kaki",
   "Tusuk Sate",
   "Dont Look Back in Anger",
-  "Radiohead",
+  "Naga Dragon Ball",
+  "Rawa Rontek",
+  "Nyi Roro Kidul",
+  "Ular Kadut",
+  "Gatot Kaca",
+  "Tikus Berdasi",
+  "El Bola Bali",
+  "El Gasing",
+  "Kura Kura Ninja",
+  "Kecoa Terbang",
 ];
 
 export default function CheckKhodamPage() {
