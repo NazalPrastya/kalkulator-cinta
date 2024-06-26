@@ -7,7 +7,9 @@ import {
   DialogBody,
   DialogFooter,
 } from "@material-tailwind/react";
+import { addDoc, collection } from "firebase/firestore";
 import { useState } from "react";
+import { database } from "../fireBase/config";
 
 const ListKhodam = [
   "Sepeda Listrik",
@@ -58,6 +60,7 @@ const ListKhodam = [
 ];
 
 export default function CheckKhodamPage() {
+  const value = collection(database, "khodam");
   const [nama, setNama] = useState("");
   const [khodamImageUrl, setKhodamImageUrl] = useState("");
   const [khodam, setKhodam] = useState("");
@@ -66,13 +69,17 @@ export default function CheckKhodamPage() {
 
   const handleOpen = () => setOpen(!open);
 
-  const handleSubmit = () => {
+  const handleSubmit = async () => {
     if (nama) {
       const filteredKhodam = ListKhodam.filter((k) => k);
       const randomKhodam =
         filteredKhodam[Math.floor(Math.random() * filteredKhodam.length)];
       let imageUrl = "";
       setKhodam(randomKhodam);
+      await addDoc(value, {
+        nama: nama,
+        khodam: randomKhodam,
+      });
       if (randomKhodam === "Tidak Ada") {
         imageUrl = "/assets/khodam/tidakada.jpeg";
       } else {
@@ -95,7 +102,7 @@ export default function CheckKhodamPage() {
             Check Khodam
           </h1>
           <div className="w-full mt-10">
-            <label for="name" className="text-white mb-3">
+            <label htmlFor="name" className="text-white mb-3">
               Nama:
             </label>
             <Input
