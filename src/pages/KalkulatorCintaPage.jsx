@@ -50,7 +50,7 @@ export default function KalkulatorCintaPage() {
           <h1 className="text-4xl font-kanit text-center bg-gradient-to-r from-blue-800  to-cyan-400 inline-block text-transparent bg-clip-text font-bold">
             Kalkulator{" "}
             <span className="bg-gradient-to-r from-red-800  to-pink-700 inline-block text-transparent bg-clip-text font-bold">
-              Cina
+              Cinta
             </span>
           </h1>
           <form
