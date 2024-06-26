@@ -23,7 +23,7 @@ export default function KalkulatorCintaPage() {
         hasil: randomNumber,
       });
       setLoading(false);
-    }, 10000);
+    }, 4000);
   };
 
   const formik = useFormik({
